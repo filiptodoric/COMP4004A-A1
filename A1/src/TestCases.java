@@ -64,14 +64,14 @@ public class TestCases {
 		assertEquals(0, test);
 	}
 
-//	@Test
-//	public void testManuallySetHand() throws Exception	{
-//		Deck deck = new Deck();
-//		Player myPlayer = new Player(1, deck);
-//		myPlayer.setManualHand();
-//		String input = "Two Hearts Three Spades King Diamonds Two Hearts Three Spades";
-//		assertEquals(1,1);
-//	}
+	@Test
+	public void testManuallySetHand() throws Exception	{
+		Deck deck = new Deck();
+		Player myPlayer = new Player(1, deck);
+		myPlayer.setManualHand();
+		String input = "Two Hearts Three Spades King Diamonds Two Hearts Three Spades";
+		assertEquals(1,1);
+	}
 	
 	@Test
 	public void testNumberOfCardsDealt() throws Exception	{
