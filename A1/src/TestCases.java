@@ -320,4 +320,8 @@ public class TestCases {
 		assertTrue(player.checkInput(test));
 	}
 	
+	/*
+	 * Because the playerId is always asked for before the cards; it cannot be out of order.
+	 */
+	
 }
