@@ -283,4 +283,41 @@ public class TestCases {
 		Evaluate eval = new Evaluate();
 		assertEquals(9, eval.checkHand(hand));
 	}	
+	
+	
+	@Test
+	public void testForMaxPlayers() throws Exception	{
+		Game game = new Game();
+		boolean chk = game.checkIfNumberOfPlayerValid(5);
+		assertTrue(chk);
+	}	
+	@Test
+	public void testForMinPlayers() throws Exception	{
+		Game game = new Game();
+		boolean chk = game.checkIfNumberOfPlayerValid(0);
+		assertTrue(chk);
+	}	
+	@Test
+	public void testFor5Cards() throws Exception	{
+		Deck deck = new Deck();	
+		Card[] hand = deck.dealHand();
+		assertEquals(5, hand.length);
+	}
+	@Test
+	public void testForInvalidCards() throws Exception	{
+		Deck deck = new Deck();	
+		Player player = new Player(1, deck);
+		String[] test = new String[1];
+		test[0] = "Hello";
+		assertFalse(player.checkInput(test));
+	}
+	@Test
+	public void testForValidCards() throws Exception	{
+		Deck deck = new Deck();	
+		Player player = new Player(1, deck);
+		String[] test = new String[1];
+		test[0] = "Spades";
+		assertTrue(player.checkInput(test));
+	}
+	
 }
