@@ -15,3 +15,37 @@ The tests for checking min/max number of players return the 'opposite' boolean t
 Testing for the minimal requirments such as: Test for Minimum and maximum number of players (2 to 4), Test to ensure there are 5 cards dealt to each player, Test for invalid cards e.g. fourteenClubs, threeShovels, thDiamonds etc., Test for valid player ids, Ensure the order of entry is correct - e.g. player id and then the cards ... etc ...
 
 are all located in the TestCases.java file. 
+
+Below is the requirments and the corresoponding test methods: 
+
+Determine how many players are playing in each round (2-4)
+  - testIfPlayerIsValid
+  - testForValidPlayerID
+  - testForValidPlayerID2
+  - testForMaxPlayers
+  - testForMinPlayers
+
+Input playerId/cards
+  - testIsCardValid
+  - testStringToIntRank
+  - testStringToIntSuit
+  - testForMaxPlayers
+  - testManuallySetHand
+  - testForPlayerId
+  - testNumberOfCardsDealt
+  - testFor5Cards
+  - testForInvalidCards
+  - testForValidCards
+
+Output these cards ranked and sorted
+  - testHighCard
+  - testTwoPair
+  - testThreeOfAKind
+  - testStraight
+  - testFlush
+  - testFullHouse
+  - testFourOfAKind
+  - testStraightFlush
+  - testRoyalFlush
+  - testEval
+  
