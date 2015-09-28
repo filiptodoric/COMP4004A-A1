@@ -25,6 +25,7 @@ public class Game {
 		game.PlayRound();
 	}
 	
+	// warning about closing System.in scanner
 	@SuppressWarnings("resource")
 	public void PlayRound()	{
 		int numPlayers;
